@@ -1,0 +1,52 @@
+* {
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: fontNova;
+    src: url(PlaypenSans-VariableFont_wght.ttf);
+}
+
+body{
+    margin: 0;
+    font-family: sans-serif;
+    background-color: #FF8080;
+}
+.header{
+    text-align: center;
+    text-transform: uppercase;
+    padding: 40px;
+    background-color: #B5CB99;
+    color: black;
+    border-bottom: 4px solid black;
+}
+.header img{
+    float: left;
+    margin: -20px;
+}
+.header h1{
+    font-family: fontNova;
+    float: center;
+    margin: 10px;
+}
+.galeria{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 20px 10px;
+}
+.galeria img{
+    width: 100%;
+    max-width: 350px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.galeria::after{
+    content: "";
+    width: 350px;
+}
